@@ -19,22 +19,18 @@ Each device uploads images to the `/camera` endpoint, and the most recent image 
 ### Requirements
 
 - Python 3.9+ (recommended)
-- Dependencies listed in `pip.txt`:
+- Dependencies managed with `uv` and `requirements.txt`.
+
+Install dependencies with:
 
 ```bash
-pip install fastapi uvicorn python-multipart
-```
-
-Or, using `pip.txt` directly:
-
-```bash
-pip install -r pip.txt
+uv pip install -r requirements.txt
 ```
 
 ### Project Structure
 
 - `main.py` - FastAPI application with all endpoints.
-- `pip.txt` - Minimal dependency installation command.
+- `requirements.txt` - Python dependencies for the service.
 - `camera_data/` - Automatically created at runtime; holds per-device image folders.
 
 ### Running the Server
